@@ -74,3 +74,14 @@
     max-width: 400px;
   }
 }
+
+/* Footer */
+
+footer {
+  margin-top: 25px;
+  padding: 20px;
+  text-align: center;
+  background-color: bisque;
+  color: #1a1818;
+  font-weight: 600;
+}
