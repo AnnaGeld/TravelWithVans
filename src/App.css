@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --dark: #222121e5;
+  --a: #161616;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.header-logo {
+  text-decoration: none;
+  color: var(--dark);
+}
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-link {
+  padding: 20px;
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Vans */
+.van-list-container {
+  padding-inline: 23px;
+}
+
+.van-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 35px;
+  margin-top: 57px;
+}
+
+.van-tile img {
+  max-width: 250px;
+  border-radius: 20px;
+}
+.van-tile a {
+  color: var(--a);
+  text-decoration: none;
+}
+.van-info {
+  padding: 10px 0;
+}
+
+.van-type {
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #b9976c;
+  color: #1a1818;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 850px) {
+  .van-tile img {
+    max-width: 400px;
+  }
+}
