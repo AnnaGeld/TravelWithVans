@@ -8,14 +8,16 @@ export default function Header() {
         <h1 className="header-logo">#VANLIFE</h1>
       </Link>
       <nav className="nav-menu">
-        <Link className="nav-link" to="/host">
-          Host
+        <Link className="nav-link" to="/vans">
+          Vans
         </Link>
+
         <Link className="nav-link" to="/about">
           About
         </Link>
-        <Link className="nav-link" to="/vans">
-          Vans
+
+        <Link className="nav-link" to="/host">
+          Host
         </Link>
       </nav>
     </header>

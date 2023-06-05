@@ -6,9 +6,52 @@
 :root {
   --dark: #222121e5;
   --a: #161616;
+  --dark-orange: #f8910a;
 }
 
+/* Home Page */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: url("./img/home-page.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 650px;
+  color: var(--dark-orange);
+  padding: 45px 23px;
+}
+
+.home-container h1 {
+  padding: 35px 0px;
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-decoration: underline rgb(255, 255, 255);
+}
+.home-container p {
+  color: var(--a);
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.home-btn {
+  padding: 15px 50px;
+  margin-top: 30px;
+  background: var(--dark-orange);
+  text-decoration: none;
+  color: var(--a);
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+/* Navigation */
 .header {
+  background-color: #b9976c;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,7 +59,7 @@
 }
 .header-logo {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--a);
 }
 .nav-menu {
   display: flex;
@@ -28,14 +71,20 @@
 .nav-link {
   padding: 20px;
   text-decoration: none;
-  color: var(--dark);
+  color: var(--a);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* Vans */
 .van-list-container {
   padding-inline: 23px;
+}
+.van-list-container h1 {
+  padding: 20px;
+  font-size: 2.5rem;
+  color: var(--a);
+  font-weight: 400;
 }
 
 .van-list {
@@ -74,6 +123,63 @@
     max-width: 400px;
   }
 }
+/* VANDETAIL */
+
+.van-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.van-detail-container img {
+  width: 100%;
+}
+.van-detail-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.van-detail-description i {
+  margin-top: 15px;
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #b9976c;
+  color: #1a1818;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.van-detail-description h2 {
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+.van-detail-description h4 {
+  margin-top: 15px;
+}
+
+.van-detail-description p {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.van-detail-description button {
+  border: none;
+  margin-top: 20px;
+  padding: 9px 33px;
+  background-color: var(--dark-orange);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
 /* Footer */
 
@@ -81,7 +187,7 @@ footer {
   margin-top: 25px;
   padding: 20px;
   text-align: center;
-  background-color: bisque;
-  color: #1a1818;
+  background-color: var(--a);
+  color: white;
   font-weight: 600;
 }
