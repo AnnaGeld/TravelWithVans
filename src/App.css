@@ -80,7 +80,7 @@ html {
   padding: 20px;
 }
 
-.nav-link {
+.nav-menu a {
   padding: 20px;
   text-decoration: none;
   color: var(--a);
