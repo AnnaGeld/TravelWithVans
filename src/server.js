@@ -66,6 +66,16 @@ createServer({
         "https://assets.scrimba.com/advanced-react/react-router/green-wonder.png",
       type: "rugged",
     });
+    server.create("van", {
+      id: "7",
+      name: "pink Wonder",
+      price: 70,
+      description:
+        "With this van, you can take your travel life to the next level. The Pink Wonder is a sustainable vehicle that's perfect for people who are looking for a stylish, eco-friendly mode of transport that can go anywhere.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1525007861926-88da2347a975?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      type: "simple",
+    });
   },
 
   routes() {

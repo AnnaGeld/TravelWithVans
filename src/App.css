@@ -7,9 +7,10 @@ html {
   background-color: #fff7ed;
 }
 :root {
+  --white: #fff;
   --pink-light: #ffcc8d;
   --dark: #222121e5;
-  --a: #161616;
+  --a: #252525;
   --dark-orange: #f8910a;
   --sky-blue: #5d6a73;
 }
@@ -34,13 +35,16 @@ html {
 
 .home-container h1 {
   padding: 35px 0px;
-  font-size: 2.8rem;
-  font-weight: 800;
-  text-decoration: underline rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 700;
+  /*  text-decoration: underline rgb(255, 255, 255); */
 }
 .home-container p {
-  color: var(--a);
-  font-weight: 800;
+  color: var(--white);
+  background-color: var(--a);
+  border-radius: 3px;
+  opacity: 0.75;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
@@ -49,10 +53,15 @@ html {
   margin-top: 30px;
   background: var(--dark-orange);
   text-decoration: none;
-  color: var(--a);
+  color: var(--white);
   font-weight: 700;
   font-size: 1.2rem;
   border-radius: 5px;
+}
+
+.home-btn:hover {
+  transition: all ease 0.9;
+  transform: translateY(-5px);
 }
 
 @media (max-width: 550px) {
@@ -73,6 +82,13 @@ html {
   text-decoration: none;
   color: var(--a);
 }
+@media (max-width: 470px) {
+  .header-logo {
+    font-size: 20px;
+    color: var(--dark-orange);
+  }
+}
+
 .nav-menu {
   display: flex;
   justify-content: center;
@@ -81,12 +97,16 @@ html {
 }
 
 .nav-menu a {
-  padding: 20px;
+  padding: 12px;
   text-decoration: none;
   color: var(--a);
   font-size: 20px;
   font-weight: 700;
 }
+.nav-menu a:hover {
+  color: #464545;
+}
+
 @media (max-width: 470px) {
   .nav-menu {
     padding: 5px;
@@ -100,14 +120,54 @@ html {
 /* Vans */
 .van-list-container {
   margin: 0 auto;
-  padding-inline: 23px;
+  padding: 15px;
 }
 .van-list-container h1 {
-  padding: 20px;
+  padding: 10px 20px;
   font-size: 2.5rem;
   color: var(--a);
   font-weight: 400;
 }
+/* Filtered buttons */
+
+.van-list-filter-buttons {
+  padding: 20px;
+}
+
+.van-type.simple:hover,
+.van-type.simple.selected {
+  background-color: #e17654;
+}
+
+.van-type.rugged:hover,
+.van-type.rugged.selected {
+  background-color: #115e59;
+}
+
+.van-type.luxury:hover,
+.van-type.luxury.selected {
+  background-color: #161616;
+}
+
+.van-type.clear-filters {
+  cursor: pointer;
+  margin-left: -20px;
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  text-decoration: underline;
+  background-color: transparent;
+  color: #4d4d4d;
+}
+
+i[class*="van-type-"] {
+  padding: 7px 14px;
+}
+
+/* END */
 
 .van-list {
   display: grid;
@@ -126,18 +186,19 @@ html {
   text-decoration: none;
 }
 .van-info {
-  padding: 10px 0;
+  padding: 18px 0;
 }
 
 .van-type {
-  height: 34px;
-  padding: 6px 26px;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px 30px;
   font-style: normal;
   font-weight: 500;
   border: none;
   border-radius: 5px;
   background-color: #b9976c;
-  color: #1a1818;
+  color: var(--white);
   transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 500px) {
