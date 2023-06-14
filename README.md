@@ -2,7 +2,7 @@
 
 ## Vanlife react project uses react, react router features. 
 
-## Features:
+### Features:
 
 React Router
 Relative Paths
@@ -11,5 +11,5 @@ Components & Pages
 API
 Hooks 
 
-## Will be adding soon
+### Will be adding soon
 ### Error Handling
