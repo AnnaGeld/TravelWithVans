@@ -23,7 +23,7 @@ export default function About() {
             Your van is ready.
           </h3>
           <Link className="about-btn" to="/vans">
-            Explore Oure Vans
+            Explore Our Vans
           </Link>
         </div>
       </div>
