@@ -8,16 +8,17 @@ html {
 }
 :root {
   --white: #fff;
-  --pink-light: #ffcc8d;
-  --dark: #222121e5;
-  --a: #252525;
-  --dark-orange: #f8910a;
+  --pink-light: /*  #1b9c85 */ #e69a37;
+  --dark: #537188;
+  --a: #f3efe0;
+  --dark-orange: #222222;
   --sky-blue: #5d6a73;
 }
 
 /* Home Page */
 
 .home-container {
+  opacity: 0.9;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -41,9 +42,9 @@ html {
 }
 .home-container p {
   color: var(--white);
-  background-color: var(--a);
+
   border-radius: 3px;
-  opacity: 0.75;
+
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -72,7 +73,7 @@ html {
 
 /* Navigation */
 .header {
-  background-color: rgb(248, 232, 201);
+  background-color: var(--pink-light);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,7 +105,7 @@ html {
   font-weight: 700;
 }
 .nav-menu a:hover {
-  color: #464545;
+  color: #4d4d4d;
 }
 
 @media (max-width: 470px) {
@@ -125,7 +126,7 @@ html {
 .van-list-container h1 {
   padding: 10px 20px;
   font-size: 2.5rem;
-  color: var(--a);
+  color: var(--dark-orange);
   font-weight: 400;
 }
 /* Filtered buttons */
@@ -324,7 +325,7 @@ i[class*="van-type-"] {
 .about-btn {
   border-radius: 4px;
   padding: 9px 23px;
-  background-color: var(--a);
+  background-color: var(--dark-orange);
   text-decoration: none;
   color: white;
 }
@@ -334,7 +335,7 @@ footer {
   margin-top: 25px;
   padding: 20px;
   text-align: center;
-  background-color: var(--a);
+  background-color: var(--pink-light);
   color: white;
   font-weight: 600;
 }
