@@ -7,11 +7,11 @@ html {
   background-color: #fff7ed;
 }
 :root {
-  --white: #fff;
-  --pink-light: /*  #1b9c85 */ #e69a37;
+  --white: #ffffff;
+  --pink-light: /*  #1b9c85 */ #034a58;
   --dark: #537188;
   --a: #f3efe0;
-  --dark-orange: #222222;
+  --dark-orange: #dcb773;
   --sky-blue: #5d6a73;
 }
 
@@ -24,7 +24,8 @@ html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background: url("./img/home-page.jpg") no-repeat center center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+    url("./img/home-page.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,6 +36,7 @@ html {
 }
 
 .home-container h1 {
+  color: var(--white);
   padding: 35px 0px;
   font-size: 3rem;
   font-weight: 700;
@@ -52,7 +54,7 @@ html {
 .home-btn {
   padding: 15px 50px;
   margin-top: 30px;
-  background: var(--dark-orange);
+  background: #e57c23;
   text-decoration: none;
   color: var(--white);
   font-weight: 700;
@@ -105,7 +107,7 @@ html {
   font-weight: 700;
 }
 .nav-menu a:hover {
-  color: #4d4d4d;
+  color: var(--dark-orange);
 }
 
 @media (max-width: 470px) {
@@ -183,7 +185,7 @@ i[class*="van-type-"] {
   border-radius: 20px;
 }
 .van-tile a {
-  color: var(--a);
+  color: #e57c23;
   text-decoration: none;
 }
 .van-info {
