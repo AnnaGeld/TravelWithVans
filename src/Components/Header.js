@@ -3,8 +3,9 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const activeStyle = {
-    borderBottom: "1px solid #4d4d4d",
+    borderBottom: "1px solid #dcb773",
   };
+
   return (
     <header className="header">
       <NavLink className="header-logo" to="/">
