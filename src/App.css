@@ -24,8 +24,7 @@ html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
-    url("./img/home-page.jpg") no-repeat center center;
+  background: url("./img/home3.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -43,11 +42,9 @@ html {
   /*  text-decoration: underline rgb(255, 255, 255); */
 }
 .home-container p {
-  color: var(--white);
+  color: var(--a);
 
-  border-radius: 3px;
-
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.5rem;
 }
 
@@ -334,7 +331,6 @@ i[class*="van-type-"] {
 /* Footer */
 
 footer {
-  margin-top: 25px;
   padding: 20px;
   text-align: center;
   background-color: var(--pink-light);
